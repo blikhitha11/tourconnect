@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>tourConnect</title>
+    <link rel="stylesheet" href="style1.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">tourConnect-Warangal</a>
+        </div>
+      </nav>
+    </div>
+    <div class="image-sections">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Section Heading</h2>
+          <p>Additional information or description here.</p>
+        </div>
+        <div class="scroll-left">&#10094;</div>
+        <div class="scrollable">
+          <div class="boxes">
+            <div class="image-container">
+              <img src="image1.png" alt="Image 1" />
+              <h2>Image 1</h2>
+              <p>Description for Image 1</p>
+            </div>
+            <div class="image-container">
+              <img src="image1.png" alt="Image 1" />
+              <h3>Image 1</h3>
+              <p>Description for Image 1</p>
+            </div>
+            <div class="image-container">
+              <img src="image1.png" alt="Image 1" />
+              <h3>Image 1</h3>
+              <p>Description for Image 1</p>
+            </div>
+          </div>
+        </div>
+        <div class="scroll-right">&#10095;</div>
+      </div>
+    </div>
+
+    <script>
+      // JavaScript to repeat the image section with city names as headings
+      document.addEventListener("DOMContentLoaded", function () {
+        const cityDetails = [
+          {
+            cityName: "Adventure",
+            description: "Description for Adventure.",
+            images: [
+              {
+                imageUrl:
+                  "https://assets.traveltriangle.com/blog/wp-content/uploads/2018/05/warangal-fort.jpg",
+                imageHeading: "Warangal Fort",
+                imageDescription: "https://warangaltourism.in/warangal-fort",
+              },
+              {
+                imageUrl:
+                  "https://assets.traveltriangle.com/blog/wp-content/uploads/2018/05/Wildlife-Sanctuary.jpg",
+                imageHeading: "Eturnagaram Wildlife Sanctuary",
+                imageDescription:
+                  "https://www.holidify.com/places/warangal/eturnagaram-wildlife-sanctuary-sightseeing-3934.html",
+              },
+              {
+                imageUrl:
+                  "https://assets.traveltriangle.com/blog/wp-content/uploads/2018/05/Bheemuni_Padam_Waterfalls.jpg",
+                imageHeading: "Bheemuni Paadam Waterfalls",
+                imageDescription:
+                  "https://devotionalyatra.com/bheemuni-paadam-waterfalls-timings/",
+              },
+              {
+                imageUrl:
+                  "https://assets.traveltriangle.com/blog/wp-content/uploads/2018/05/Laknavaram-lake.jpg",
+                imageHeading: "Laknavaram Lake",
+                imageDescription:
+                  "https://thewarangal.com/laknavaram-lake-warangal/",
+              },
+              {
+                imageUrl:
+                  "https://assets.traveltriangle.com/blog/wp-content/uploads/2018/05/warangal-fort.jpg",
+                imageHeading: "Warangal Fort",
+                imageDescription: "https://warangaltourism.in/warangal-fort",
+              },
+              {
+                imageUrl:
+                  "https://assets.traveltriangle.com/blog/wp-content/uploads/2018/05/Wildlife-Sanctuary.jpg",
+                imageHeading: "Eturnagaram Wildlife Sanctuary",
+                imageDescription:
+                  "https://www.holidify.com/places/warangal/eturnagaram-wildlife-sanctuary-sightseeing-3934.html",
+              },
+              {
+                imageUrl:
+                  "https://assets.traveltriangle.com/blog/wp-content/uploads/2018/05/Bheemuni_Padam_Waterfalls.jpg",
+                imageHeading: "Bheemuni Paadam Waterfalls",
+                imageDescription:
+                  "https://devotionalyatra.com/bheemuni-paadam-waterfalls-timings/",
+              },
+              {
+                imageUrl:
+                  "https://assets.traveltriangle.com/blog/wp-content/uploads/2018/05/Laknavaram-lake.jpg",
+                imageHeading: "Laknavaram Lake",
+                imageDescription:
+                  "https://thewarangal.com/laknavaram-lake-warangal/",
+              },
+
+              // Add more images and descriptions for Adventure if needed
+            ],
+          },
+          {
+            cityName: "Fun and Entertainment",
+            description: "Description for Fun and Entertainment.",
+            images: [
+              {
+                imageUrl:
+                  "https://assets.traveltriangle.com/blog/wp-content/uploads/2020/01/Kakatiya-Musical-Garden.jpg",
+                imageHeading: "Kakatiya Musical Garden",
+                imageDescription:
+                  "https://thewarangal.com/kakatiya-musical-garden-warangal/",
+              },
+              {
+                imageUrl:
+                  "https://www.holidify.com/images/cmsuploads/compressed/Shiva_Temple_Warangal_20190116144002.JPG",
+                imageHeading: "Rayaparthy Shiva Temple",
+                imageDescription:
+                  "https://www.holidify.com/places/warangal/rayaparthy-shiva-temple-sightseeing-122817.html",
+              },
+              {
+                imageUrl:
+                  "https://i0.wp.com/pariskathmandu.com/wp-content/uploads/2021/03/27625166_1537449576303998_1793675664651200590_o.jpg?resize=1024%2C712&amp;ssl=1",
+                imageHeading: "Swayambhu Temple",
+                imageDescription:
+                  "https://pariskathmandu.com/swayambhunath/#google_vignette",
+              },
+              {
+                imageUrl:
+                  "https://assets.traveltriangle.com/blog/wp-content/uploads/2018/04/zoo-in-warangal.jpg",
+                imageHeading: "Vana Vigyan Kendra Mini Zoo",
+                imageDescription:
+                  "https://touradvisorhub.com/vana-vigyan-kendra-mini-zoo/",
+              },
+              {
+                imageUrl:
+                  "https://www.travenix.com/wp-content/uploads/2020/08/Laknavaram-Lake.jpg",
+                imageHeading: "Laknavaram Lake",
+                imageDescription:
+                  "https://devotionalyatra.com/inavolu-mallanna-temple/",
+              },
+              {
+                imageUrl:
+                  "https://assets.traveltriangle.com/blog/wp-content/uploads/2020/01/Kakatiya-Musical-Garden.jpg",
+                imageHeading: "Kakatiya Musical Garden",
+                imageDescription:
+                  "https://thewarangal.com/kakatiya-musical-garden-warangal/",
+              },
+              {
+                imageUrl:
+                  "https://www.holidify.com/images/cmsuploads/compressed/Shiva_Temple_Warangal_20190116144002.JPG",
+                imageHeading: "Rayaparthy Shiva Temple",
+                imageDescription:
+                  "https://www.holidify.com/places/warangal/rayaparthy-shiva-temple-sightseeing-122817.html",
+              },
+              {
+                imageUrl:
+                  "https://i0.wp.com/pariskathmandu.com/wp-content/uploads/2021/03/27625166_1537449576303998_1793675664651200590_o.jpg?resize=1024%2C712&amp;ssl=1",
+                imageHeading: "Swayambhu Temple",
+                imageDescription:
+                  "https://pariskathmandu.com/swayambhunath/#google_vignette",
+              },
+              {
+                imageUrl:
+                  "https://assets.traveltriangle.com/blog/wp-content/uploads/2018/04/zoo-in-warangal.jpg",
+                imageHeading: "Vana Vigyan Kendra Mini Zoo",
+                imageDescription:
+                  "https://touradvisorhub.com/vana-vigyan-kendra-mini-zoo/",
+              },
+              {
+                imageUrl:
+                  "https://www.travenix.com/wp-content/uploads/2020/08/Laknavaram-Lake.jpg",
+                imageHeading: "Laknavaram Lake",
+                imageDescription:
+                  "https://devotionalyatra.com/inavolu-mallanna-temple/",
+              },
+            ],
+          },
+          {
+            cityName: "Historical",
+            description: "Description for Historical.",
+            images: [
+              // Add images and descriptions for Historical
+              {
+                imageUrl: "https://assets.traveltriangle.com/blog/wp-content/uploads/2018/05/thousand-pillar-temple.jpg",
+                imageHeading: "Thousand Pillar Temple",
+                imageDescription: "https://www.sanskritimagazine.com/thousand-pillar-rudreshwar-temple-of-warangal/",
+              },
+              {
+                imageUrl: "https://img.traveltriangle.com/blog/wp-content/uploads/2018/05/sri-v-temple1.jpg",
+                imageHeading: "Jain Temple",
+                imageDescription: "https://www.jainism.pilgrimagetour.in/jain-temple-warangal/",
+              },
+              {
+                imageUrl: "https://assets.traveltriangle.com/blog/wp-content/uploads/2019/12/ISKCON.jpg",
+                imageHeading: "ISKCON",
+                imageDescription: "https://delhitourism.travel/iskcon-temple-delhi",
+              },
+              {
+                imageUrl: "https://im.hunt.in/cg/warangal/City-Guide/siddeshwara-temple.jpg",
+                imageHeading: "Siddeshwara Temple",
+                imageDescription: "https://www.warangalonline.in/city-guide/siddeshwara-temple-warangal",
+              },
+              {
+                imageUrl: "https://assets.traveltriangle.com/blog/wp-content/uploads/2018/05/thousand-pillar-temple.jpg",
+                imageHeading: "Thousand Pillar Temple",
+                imageDescription: "https://www.sanskritimagazine.com/thousand-pillar-rudreshwar-temple-of-warangal/",
+              },
+              {
+                imageUrl: "https://img.traveltriangle.com/blog/wp-content/uploads/2018/05/sri-v-temple1.jpg",
+                imageHeading: "Jain Temple",
+                imageDescription: "https://www.jainism.pilgrimagetour.in/jain-temple-warangal/",
+              },
+              {
+                imageUrl: "https://assets.traveltriangle.com/blog/wp-content/uploads/2019/12/ISKCON.jpg",
+                imageHeading: "ISKCON",
+                imageDescription: "https://delhitourism.travel/iskcon-temple-delhi",
+              },
+              {
+                imageUrl: "https://im.hunt.in/cg/warangal/City-Guide/siddeshwara-temple.jpg",
+                imageHeading: "Siddeshwara Temple",
+                imageDescription: "https://www.warangalonline.in/city-guide/siddeshwara-temple-warangal",
+              },
+            ],
+          },
+          {
+            cityName: "Ecotourism",
+            description: "Description for Ecotourism.",
+            images: [
+              // Add images and descriptions for Ecotourism
+              {
+                imageUrl: "https://warangaltourism.in/images/places-to-visit-warangal/headers/kakatiya-rock-garden-warangal-tourism-entry-fee-timings-holidays-reviews-header.jpg",
+                imageHeading: "Kakatiya Rock Garden",
+                imageDescription: "https://warangaltourism.in/kakatiya-rock-garden-warangal#google_vignette",
+              },
+              {
+                imageUrl: "https://www.holidify.com/images/cmsuploads/compressed/3638c13c34040fbf71d6a28e135d92c0_20171211163958.jpg",
+                imageHeading: "Indra Gandhi Zoological Park",
+                imageDescription: "https://www.holidify.com/places/visakhapatnam/indira-gandhi-zoological-park-sightseeing-3909.html",
+              },
+              {
+                imageUrl: "https://www.holidify.com/images/cmsuploads/compressed/640px-Jain_temple_warangal_20190306122454_20190306122513.jpg",
+                imageHeading: "Kulpakji Jain Mandir",
+                imageDescription: "https://touradvisorhub.com/kulpakji-jain-mandir/",
+              },
+              {
+                imageUrl: "https://devotionalyatra.com/wp-content/uploads/2022/12/Inavolu-Mallanna-Temple.jpg",
+                imageHeading: "Inavolu Mallanna Temple",
+                imageDescription: "https://devotionalyatra.com/inavolu-mallanna-temple/",
+              },
+              {
+                imageUrl: "https://warangaltourism.in/images/places-to-visit-warangal/headers/kakatiya-rock-garden-warangal-tourism-entry-fee-timings-holidays-reviews-header.jpg",
+                imageHeading: "Kakatiya Rock Garden",
+                imageDescription: "https://warangaltourism.in/kakatiya-rock-garden-warangal#google_vignette",
+              },
+              {
+                imageUrl: "https://www.holidify.com/images/cmsuploads/compressed/3638c13c34040fbf71d6a28e135d92c0_20171211163958.jpg",
+                imageHeading: "Indra Gandhi Zoological Park",
+                imageDescription: "https://www.holidify.com/places/visakhapatnam/indira-gandhi-zoological-park-sightseeing-3909.html",
+              },
+              {
+                imageUrl: "https://www.holidify.com/images/cmsuploads/compressed/640px-Jain_temple_warangal_20190306122454_20190306122513.jpg",
+                imageHeading: "Kulpakji Jain Mandir",
+                imageDescription: "https://touradvisorhub.com/kulpakji-jain-mandir/",
+              },
+              {
+                imageUrl: "https://devotionalyatra.com/wp-content/uploads/2022/12/Inavolu-Mallanna-Temple.jpg",
+                imageHeading: "Inavolu Mallanna Temple",
+                imageDescription: "https://devotionalyatra.com/inavolu-mallanna-temple/",
+              },
+            ],
+          },
+          // Include other cities with their respective images and descriptions similarly
+        ];
+
+        const imageSections = document.querySelector(".image-sections");
+
+        let html = "";
+        cityDetails.forEach((city) => {
+          const imageSectionTemplate = `
+      <div class="container">
+        <div class="section-heading">
+          <h2>${city.cityName}</h2>
+          <p>${city.description}</p>
+        </div>
+        <div class="scroll-left">&#10094;</div>
+        <div class="scrollable">
+          <div class="boxes">
+            ${city.images
+              .map(
+                (image) => `
+                  <div class="image-container">
+                    <img src="${image.imageUrl}" alt="${city.cityName} Image" />
+                    <h5>${image.imageHeading}</h5>
+                    <a href="${image.imageDescription}" target="_blank">Click here</a>
+                  </div>
+                `
+              )
+              .join("")}
+          </div>
+        </div>
+        <div class="scroll-right">&#10095;</div>
+      </div>
+    `;
+          html += imageSectionTemplate;
+        });
+
+        imageSections.innerHTML = html;
+
+        // Event delegation for scroll arrows
+        imageSections.addEventListener("click", function (event) {
+          const scrollLeftArrow = event.target.closest(".scroll-left");
+          const scrollRightArrow = event.target.closest(".scroll-right");
+          const scrollableContent = event.target.closest(".scrollable");
+
+          if (scrollLeftArrow && scrollableContent) {
+            scrollableContent.scrollBy({
+              left: -150,
+              behavior: "smooth",
+            });
+          }
+
+          if (scrollRightArrow && scrollableContent) {
+            scrollableContent.scrollBy({
+              left: 150,
+              behavior: "smooth",
+            });
+          }
+        });
+      });
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
